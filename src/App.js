@@ -2,7 +2,6 @@ import React, {useState} from "react";
 import './styles/App.css';
 import ClassCounter from "./components/ClassCounter";
 import Counter from "./components/Counter";
-import PostItem from "./components/PostItem";
 import PostList from "./components/PostList";
 
 function App() {
@@ -20,7 +19,9 @@ function App() {
   return (
     <div className="App">
       <PostList posts={posts} title={'Посты про JS'}/>
+      <Counter/>
       <PostList posts={posts2} title={'Посты про Python'}/>
+      <ClassCounter/>
     </div>
   );
 }
